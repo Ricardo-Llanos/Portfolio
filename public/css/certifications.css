@@ -1,0 +1,148 @@
+.certifications-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #090E19; /* Tu color de fondo global */
+    padding: 8rem 2rem 10rem 2rem; /* Espaciado proporcional */
+    box-sizing: border-box;
+}
+
+.certifications-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 110rem; /* Ajustado perfectamente al layout del Hero y Proyectos */
+    gap: 5rem;
+}
+
+/* --- Encabezado --- */
+.certifications-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.certifications-subtitle {
+    color: #818cf8;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.certifications-title {
+    font-size: 3.8rem;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: -0.05rem;
+}
+
+/* --- Cuadrícula Rejilla de Certificados --- */
+.certifications-grid {
+    display: grid;
+    /* Genera columnas simétricas basadas en tu mockup, mínimo de 320px */
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap: 3rem;
+    width: 100%;
+}
+
+/* --- Estilo de Tarjeta (Cuadros de Referencia) --- */
+.certification-card {
+    background: #0f172a;
+    border: 0.1rem solid rgba(255, 255, 255, 0.04);
+    border-radius: 2rem;
+    padding: 3rem;
+    display: flex;
+    gap: 2rem; /* Separa el icono decorativo del texto */
+    align-items: flex-start;
+    transition: all 0.3s ease;
+}
+
+.certification-card:hover {
+    transform: translateY(-0.4rem);
+    border-color: rgba(168, 85, 247, 0.25); /* Glow morado neón sutil al pasar el mouse */
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.35);
+}
+
+/* --- Contenedor del Icono --- */
+.cert-icon-wrapper {
+    background: rgba(99, 102, 241, 0.08);
+    border: 0.1rem solid rgba(99, 102, 241, 0.2);
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; /* Evita que el cuadro del icono se deforme si hay mucho texto */
+}
+
+.cert-icon {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #818cf8;
+}
+
+/* --- Textos de Información Interna --- */
+.cert-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.cert-card-title {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+}
+
+.cert-issuer {
+    color: #c084fc; /* Tono morado sutil para la entidad */
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+
+.cert-date {
+    color: #64748b;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.cert-description {
+    color: #94a3b8;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+/* --- Enlaces de Verificación de Credenciales --- */
+.btn-cert-verify {
+    color: #818cf8;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-decoration: none;
+    align-self: flex-start;
+    transition: color 0.2s ease;
+}
+
+.btn-cert-verify:hover {
+    color: #c084fc;
+    text-decoration: underline;
+}
+
+/* Estado de asistencia o complementario */
+.cert-status-badge {
+    background: rgba(255, 255, 255, 0.03);
+    border: 0.1rem solid rgba(255, 255, 255, 0.08);
+    color: #64748b;
+    padding: 0.4rem 1rem;
+    border-radius: 0.6rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    align-self: flex-start;
+}

@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+:root{
+    --var-light-background: #F9F9FD;
+    --var-dark-background: #090E19;
+}
+
+body{
+    /* width: 100%; */
+    /* height: 100vh; */
+
+    font-size: 1.7rem;
+}

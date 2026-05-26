@@ -1,0 +1,216 @@
+.contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #090E19; /* Fondo unificado */
+    padding: 10rem 2rem 12rem 2rem; /* Margen inferior holgado para cerrar la página */
+    box-sizing: border-box;
+}
+
+.contact-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 110rem; /* Alineación perfecta con Hero, About y Proyectos */
+    gap: 8rem;
+}
+
+/* --- BLOQUE IZQUIERDO: INFORMACIÓN --- */
+.contact-info-block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+    width: 100%;
+}
+
+.contact-subtitle {
+    color: #818cf8;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-title {
+    font-size: 3.8rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    letter-spacing: -0.05rem;
+    line-height: 1.2;
+}
+
+.contact-description {
+    color: #94a3b8;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    margin-bottom: 4rem;
+}
+
+.contact-cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-detail-card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background: #0f172a;
+    border: 0.1rem solid rgba(255, 255, 255, 0.04);
+    padding: 2rem;
+    border-radius: 1.6rem;
+}
+
+.contact-icon-box {
+    background: rgba(99, 102, 241, 0.08);
+    border: 0.1rem solid rgba(99, 102, 241, 0.15);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-svg-icon {
+    width: 2.2rem;
+    height: 2.2rem;
+    /* Fuerza los vectores negros internos de tus iconos a blanco brillante */
+    filter: invert(1) brightness(2); 
+}
+
+.contact-detail-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.detail-label {
+    color: #64748b;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.detail-value {
+    color: #818cf8;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.detail-value.text-white {
+    color: #ffffff;
+}
+
+a.detail-value:hover {
+    color: #c084fc;
+}
+
+/* --- BLOQUE DERECHO: FORMULARIO --- */
+.contact-form-block {
+    flex: 1;
+    background: #0f172a;
+    border: 0.1rem solid rgba(255, 255, 255, 0.05);
+    border-radius: 2.4rem;
+    padding: 4rem;
+    width: 100%;
+    min-width: 34rem;
+    max-width: 55rem;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-label {
+    color: #94a3b8;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.form-input, 
+.form-textarea {
+    background: rgba(9, 14, 25, 0.7);
+    border: 0.1rem solid rgba(255, 255, 255, 0.08);
+    border-radius: 1.2rem;
+    padding: 1.4rem 1.8rem;
+    color: #ffffff;
+    font-size: 1.5rem;
+    outline: none;
+    font-family: inherit;
+    transition: all 0.2s ease;
+}
+
+.form-input:focus, 
+.form-textarea:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 0.3rem rgba(99, 102, 241, 0.15);
+    background: rgba(9, 14, 25, 0.9);
+}
+
+.form-textarea {
+    resize: none; /* Evita que el usuario deforme la tarjeta manualmente */
+}
+
+/* --- BOTÓN DE ENVÍO PRINCIPAL --- */
+.btn-submit {
+    background: linear-gradient(135deg, #6366f1, #a855f7);
+    color: #ffffff;
+    border: none;
+    border-radius: 1.2rem;
+    padding: 1.6rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.btn-submit:hover {
+    transform: translateY(-0.2rem);
+    box-shadow: 0 1rem 2rem rgba(99, 102, 241, 0.3);
+    filter: brightness(1.1);
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+}
+
+/* Asegura que los campos tengan transiciones fluidas al ser seleccionados */
+.form-input, 
+.form-textarea {
+    background: rgba(9, 14, 25, 0.7);
+    border: 0.1rem solid rgba(255, 255, 255, 0.08);
+    border-radius: 1.2rem;
+    padding: 1.4rem 1.8rem;
+    color: #ffffff;
+    font-size: 1.5rem;
+    outline: none;
+    font-family: inherit;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Efecto focus al rellenar el formulario */
+.form-input:focus, 
+.form-textarea:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 0.3rem rgba(99, 102, 241, 0.15);
+    background: rgba(9, 14, 25, 0.9);
+}

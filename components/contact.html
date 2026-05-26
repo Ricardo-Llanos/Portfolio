@@ -1,0 +1,55 @@
+<section id="contact" class="contact-section">
+    <div class="contact-container">
+        <div class="contact-info-block">
+            <span class="contact-subtitle">Contacto</span>
+            <h2 class="contact-title">¿Tienes un proyecto en mente?</h2>
+            <p class="contact-description">
+                Estoy abierto a oportunidades de tiempo completo, roles remotos y consultorías en arquitectura de software y optimización backend. ¡Hablemos!
+            </p>
+
+            <div class="contact-cards-wrapper">
+                <div class="contact-detail-card">
+                    <div class="contact-icon-box">
+                        <svg class="contact-svg-icon"><use xlink:href="src/contact.svg#correo-icon"/></svg>
+                    </div>
+                    <div class="contact-detail-text">
+                        <span class="detail-label">Envíame un correo</span>
+                        <a href="mailto:llanoslozano2005@gmail.com" class="detail-value">llanoslozano2005@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-detail-card">
+                    <div class="contact-icon-box">
+                        <svg class="contact-svg-icon"><use xlink:href="src/contact.svg#ubicacion-icon"/></svg>
+                    </div>
+                    <div class="contact-detail-text">
+                        <span class="detail-label">Ubicación</span>
+                        <span class="detail-value text-white">Junín, Perú</span>
+                    </div>
+                </div>
+            </div>
+        </div> <div class="contact-form-block">
+            <form action="https://formspree.io/f/tu_id_aqui" method="POST" class="contact-form" autocomplete="off">
+                
+                <div class="form-group">
+                    <label for="name" class="form-label">Nombre Completo</label>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="Tu nombre y apellido" required minlength="3">
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="tu@correo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message" class="form-label">Mensaje o Propuesta</label>
+                    <textarea id="message" name="message" rows="5" class="form-textarea" placeholder="Cuéntame detalladamente sobre tu proyecto..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">
+                    Enviar Mensaje &rarr;
+                </button>
+            </form>
+        </div>
+    </div>
+</section>

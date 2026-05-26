@@ -1,0 +1,131 @@
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #090E19; /* Tu color de fondo global */
+    padding: 10rem 2rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 110rem; /* Mismo límite horizontal de las demás secciones */
+    gap: 8rem; /* Separación balanceada entre la foto y el texto */
+}
+
+/* --- Bloque Izquierdo: Estructura de la Foto --- */
+.about-visual {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    min-width: 34rem;
+}
+
+.about-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 42rem;
+}
+
+/* Destello de neón cyan/azul en el fondo de la foto para variar sutilmente del Hero */
+.about-image-glow {
+    position: absolute;
+    top: -1.5rem; left: -1.5rem; right: -1.5rem; bottom: -1.5rem;
+    background: linear-gradient(135deg, #06b6d4, #6366f1);
+    border-radius: 3.2rem;
+    filter: blur(3.5rem);
+    opacity: 0.25;
+    z-index: 1;
+}
+
+.about-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #0f172a;
+    border: 0.1rem solid rgba(255, 255, 255, 0.08);
+    border-radius: 2.8rem;
+    overflow: hidden;
+    z-index: 2;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
+}
+
+.about-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la foto perfectamente sin deformarla */
+}
+
+/* --- Bloque Derecho: Texto e Información --- */
+.about-content {
+    flex: 1.2;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-subtitle {
+    color: #818cf8;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.about-title {
+    font-size: 3.8rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 2.5rem;
+    letter-spacing: -0.05rem;
+}
+
+.about-description {
+    color: #94a3b8; /* Gris intermedio de alta legibilidad */
+    font-size: 1.6rem; /* 16px */
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.about-description strong {
+    color: #ffffff; /* Destaca los textos fuertes en blanco nítido */
+    font-weight: 600;
+}
+
+/* --- Bloque de Datos Destacados (Highlights) --- */
+.about-highlights {
+    display: flex;
+    gap: 4rem;
+    margin-top: 2rem;
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.05);
+    padding-top: 3rem;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.highlight-number {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #06b6d4; /* Color cyan neón */
+    background: rgba(6, 182, 212, 0.08);
+    padding: 0.8rem 1.4rem;
+    border-radius: 1.2rem;
+    border: 0.1rem solid rgba(6, 182, 212, 0.15);
+}
+
+.highlight-text {
+    font-size: 1.3rem;
+    color: #64748b;
+    line-height: 1.4;
+    font-weight: 500;
+}

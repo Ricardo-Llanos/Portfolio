@@ -1,0 +1,126 @@
+.sesiones-wrapper {
+    width: 100%;
+    background-color: #090E19; /* Tu fondo global */
+    padding: 12rem 2rem 10rem 2rem;
+    box-sizing: border-box;
+    display: none; /* 🌟 Oculto por defecto. Solo JavaScript lo activará */
+}
+
+.sesiones-container {
+    width: 100%;
+    max-width: 90rem; /* Más angosto estilo blog para lectura fluida */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+/* --- Encabezado --- */
+.sesiones-header {
+    text-align: center;
+}
+
+.sesiones-subtitle {
+    color: #06b6d4; /* Color cian neón educativo */
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.sesiones-title {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 1rem 0 1.5rem 0;
+}
+
+.sesiones-description {
+    color: #64748b;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    max-width: 65rem;
+    margin: 0 auto;
+}
+
+/* --- Cronograma Semanal --- */
+.sesiones-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.sesion-card {
+    background: #0f172a;
+    border: 0.1rem solid rgba(255, 255, 255, 0.04);
+    border-radius: 2rem;
+    padding: 3rem;
+    display: flex;
+    gap: 2.5rem;
+    align-items: flex-start;
+    transition: transform 0.2s ease;
+}
+
+.sesion-card:hover {
+    transform: translateX(0.5rem); /* Efecto de empuje lateral sutil */
+    border-color: rgba(6, 182, 212, 0.2);
+}
+
+/* El logo circular (S1, S2...) */
+.sesion-badge-logo {
+    background: linear-gradient(135deg, #06b6d4, #6366f1);
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 800;
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%; /* Perfecto círculo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 0.4rem 1.5rem rgba(6, 182, 212, 0.25);
+}
+
+.sesion-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Título de la semana con fondo resaltado sutil */
+.sesion-week-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.4;
+    margin-bottom: 1.2rem;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 0.6rem 1.2rem;
+    border-left: 0.3rem solid #06b6d4; /* Línea de acento cian */
+    border-radius: 0 0.8rem 0.8rem 0;
+}
+
+.sesion-text {
+    color: #94a3b8;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+/* --- Herramientas Usadas --- */
+.sesion-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.tool-tag {
+    background: rgba(6, 182, 212, 0.06);
+    border: 0.1rem solid rgba(6, 182, 212, 0.15);
+    color: #22d3ee; /* Texto iluminado */
+    padding: 0.5rem 1.4rem;
+    border-radius: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}

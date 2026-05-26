@@ -1,0 +1,160 @@
+.projects-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #090E19; /* Mantiene tu fondo global */
+    padding: 10rem 2rem;
+    box-sizing: border-box;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 110rem; /* Alineado exactamente con el ancho máximo del Hero */
+    gap: 5rem;
+}
+
+/* --- Bloque de Encabezado Izquierdo --- */
+.projects-header {
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-subtitle {
+    color: #818cf8;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.projects-title {
+    font-size: 4.2rem; /* Tamaño proporcional y limpio */
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.08rem;
+}
+
+.projects-description {
+    color: #94a3b8;
+    font-size: 1.7rem;
+    line-height: 1.6;
+}
+
+/* --- Cuadrícula de Tarjetas (Grid de 3 Columnas) --- */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap: 3rem;
+    width: 100%;
+}
+
+/* --- Tarjeta Estilo Minimalista/Glow --- */
+.project-card {
+    background: #0f172a;
+    border: 0.1rem solid rgba(255, 255, 255, 0.05);
+    border-radius: 2rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.project-card:hover {
+    transform: translateY(-0.5rem);
+    border-color: rgba(99, 102, 241, 0.3);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4);
+}
+
+.project-category {
+    color: #c084fc; /* Morado neón sutil */
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    display: inline-block;
+    margin-bottom: 1.2rem;
+}
+
+.project-card-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+}
+
+.project-card-description {
+    color: #64748b;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+}
+
+/* --- Etiquetas de Tecnologías --- */
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.tag {
+    background: rgba(255, 255, 255, 0.03);
+    border: 0.1rem solid rgba(255, 255, 255, 0.08);
+    color: #94a3b8;
+    padding: 0.5rem 1.2rem;
+    border-radius: 5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* --- Enlaces de Acción Internos --- */
+.project-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto; /* Empuja los botones al final de la tarjeta */
+}
+
+.btn-project-primary {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.btn-project-primary:hover {
+    color: #818cf8;
+}
+
+.btn-project-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.8rem;
+    height: 3.8rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 0.1rem solid rgba(255, 255, 255, 0.05);
+    border-radius: 1rem;
+    transition: all 0.2s ease;
+}
+
+.btn-project-icon svg {
+    width: 1.8rem;
+    height: 1.8rem;
+    filter: invert(1) brightness(2); /* Mantiene tu icono de GitHub blanco */
+}
+
+.btn-project-icon:hover {
+    background: rgba(99, 102, 241, 0.1);
+    border-color: #6366f1;
+}

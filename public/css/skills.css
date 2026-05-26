@@ -1,0 +1,136 @@
+.skills-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #090E19; /* Tu color de fondo global */
+    padding: 8rem 2rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 110rem; /* Mismo límite horizontal del Hero y Proyectos */
+    gap: 4rem;
+}
+
+/* --- Encabezado centrado al estilo de la sección --- */
+.skills-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-subtitle {
+    color: #818cf8;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.skills-title {
+    font-size: 3.8rem;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: -0.05rem;
+}
+
+/* --- Contenedor del Carrusel (Maneja el efecto difuminado) --- */
+.skills-slider-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 2rem 0;
+    /* Crea la máscara de degradado en los extremos (Mockup guía) */
+    mask-image: linear-gradient(to right, transparent, #000 15%, #000 85%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 15%, #000 85%, transparent);
+}
+
+/* --- El riel de animación que desplaza los grupos --- */
+.skills-track {
+    display: flex;
+    width: max-content;
+}
+
+.skills-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 4rem; /* Separación simétrica de las tarjetas */
+    padding-right: 4rem; /* Asegura un espaciado continuo con el clon */
+    /* Animación lineal infinita: tarda 25s en dar una vuelta completa */
+    animation: scroll-infinite 25s linear infinite;
+}
+
+/* Pausa la animación cuando el usuario pone el cursor encima (Interactividad fluida) */
+.skills-slider-wrapper:hover .skills-group {
+    animation-play-state: paused;
+}
+
+/* --- Estilo de Tarjeta Individual --- */
+.skill-card {
+    background: #0f172a;
+    border: 0.1rem solid rgba(255, 255, 255, 0.05);
+    border-radius: 1.6rem;
+    width: 14rem;   /* Ancho fijo proporcional */
+    height: 13rem;  /* Alto fijo proporcional */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.skill-card img {
+    width: 4.5rem; /* Tamaño óptimo del logo */
+    height: 4.5rem;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.skill-card span {
+    color: #94a3b8;
+    font-size: 1.4rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Forzamos filtro blanco al logo de GitHub para que contraste */
+.skill-card img.icon-white {
+    filter: invert(1) brightness(2);
+}
+
+/* --- Efecto Hover (Iluminación sutil al diseño) --- */
+.skill-card:hover {
+    transform: translateY(-0.4rem);
+    border-color: rgba(99, 102, 241, 0.25);
+    background: rgba(15, 23, 42, 0.8);
+    box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.skill-card:hover img {
+    transform: scale(1.1);
+}
+
+.skill-card:hover span {
+    color: #ffffff;
+}
+
+/* --- Keyframes de la Animación de Desplazamiento --- */
+@keyframes scroll-infinite {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /* Desplaza exactamente el 100% de un grupo completo */
+        transform: translateX(-100%);
+    }
+}

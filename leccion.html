@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de la Lección | Sesiones de Clase</title>
+    
+    <link rel="stylesheet" href="public/css/styles.css">
+    <link rel="stylesheet" href="public/css/navbar.css">
+    <link rel="stylesheet" href="public/css/leccion.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
+    <script src="public/js/lessonManager.js" type="module" defer></script>
+</head>
+<body>
+
+    <div data-component="navbar"></div>
+
+    <main class="leccion-main">
+        <div class="leccion-container">
+            
+            <nav class="leccion-nav-bar" aria-label="Navegación de lecciones">
+                <a href="index.html#sesiones" id="btn-volver" class="btn-leccion-nav">&larr; Volver a Sesiones</a>
+                
+                <div class="leccion-pager">
+                    <button id="btn-anterior" class="btn-leccion-nav">&larr; Anterior</button>
+                    <button id="btn-siguiente" class="btn-leccion-nav">Siguiente &rarr;</button>
+                </div>
+            </nav>
+
+            <article id="leccion-content" class="markdown-body">
+                <p role="status" class="loading-text">Cargando el contenido de la sesión...</p>
+            </article>
+
+        </div>
+    </main>
+
+</body>
+</html>
