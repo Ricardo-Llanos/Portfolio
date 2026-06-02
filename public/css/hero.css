@@ -216,9 +216,13 @@
     text-decoration: none;
 }
 
+.social-icon[src="src/github.png"]{
+    filter: invert(100%);
+}
+
 .social-icon {
-    width: 2.2rem;  /* 22px de tamaño interno */
-    height: 2.2rem;
+    width: 3rem;  /* 22px de tamaño interno */
+    height: 3rem;
     fill: #ffffff;  /* Color por defecto para tus iconos dinámicos */
     color: #fff;
     transition: transform 0.2s ease;

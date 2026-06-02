@@ -54,3 +54,9 @@ async function obtenerListadoProyectos() {
 }
 
 ```
+
+## Recursos adicionales:
+- [![]()]
+
+## Proyectos Relacionados
+- [Desarrollo web - Práctica Semana 6](https://github.com/Ricardo-Llanos/Desarrollo-web-semana6.git)

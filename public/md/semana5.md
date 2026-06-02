@@ -79,3 +79,10 @@ La aplicación de estilos estéticos y el diseño responsivo dentro de una arqui
 
 * 
 **Frameworks CSS Utility-First:** Integración de herramientas como Tailwind CSS, permitiendo la construcción del diseño del componente directamente en las etiquetas JSX mediante la inyección secuencial de clases utilitarias de bajo nivel.
+
+## Recursos adicionales:
+- [![]()]
+
+## Proyectos Relacionados
+- [Desarrollo web - Práctica Semana 5](https://github.com/Ricardo-Llanos/Desarrollo-web-semana-5.git) 
+- [Desarrollo web - Práctica Grupal Semana 5](https://github.com/CrisMC2/Desarrollo-Web.git) 

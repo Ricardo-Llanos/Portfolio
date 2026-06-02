@@ -4,6 +4,8 @@
     align-items: center;
     padding: 2rem 8rem;
     background: transparent;
+    backdrop-filter: blur(10px);
+
     position: fixed;
     top: 0;
     width: 100%;

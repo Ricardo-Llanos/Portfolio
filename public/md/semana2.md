@@ -130,3 +130,12 @@ Los motores de renderizado (como Blink en Chrome, Gecko en Firefox y WebKit en S
 
 * 
 **Estrategias de Degradación Degradada:** Diseñar la estructura de modo que, si un navegador antiguo no interpreta una etiqueta semántica avanzada de HTML5, el contenido siga siendo legible y accesible bajo contenedores genéricos alternativos.
+
+## Recursos adicionales:
+- [![]()]
+
+## Proyectos Relacionados
+- [Desarrollo web - Práctica Semana 2](https://github.com/Ricardo-Llanos/Desarrollo-web-semana2.git) 
+![Desarrollo web - Práctica Semana 2](./src/image.png)
+- [Desarrollo web - Práctica Grupal Semana 2](https://github.com/IngenieroTaipe/GaleriaProyectos.git) 
+![Desarrollo web - Práctica Grupal Semana 2](./src/image-1.png)

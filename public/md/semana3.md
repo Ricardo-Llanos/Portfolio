@@ -131,3 +131,10 @@ El desarrollo responsivo asegura que la interfaz adapte su arquitectura de forma
 }
 
 ```
+
+## Recursos adicionales:
+- [![]()]
+
+## Proyectos Relacionados
+- [Desarrollo web - Práctica Semana 3](https://github.com/Ricardo-Llanos/Desarrollo-web-semana4.git) 
+![Desarrollo web - Práctica Semana 3](image-2.png)

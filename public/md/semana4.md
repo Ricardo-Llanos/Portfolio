@@ -162,3 +162,9 @@ contexto.fillRect(10, 10, 150, 100);
 ### Ciclo de Animación Controlado
 
 La ejecución de animaciones fluidas y de alto rendimiento se gestiona mediante el método nativo `requestAnimationFrame`. Esta API instruye al navegador para que ejecute una función de actualización específica justo antes del próximo repintado de la pantalla, sincronizándose de manera automática con la tasa de refresco del hardware del dispositivo.
+
+## Recursos adicionales:
+- [![]()]
+
+## Proyectos Relacionados
+- [Desarrollo web - Práctica Semana 4.1](https://github.com/Ricardo-Llanos/Desarrollo-web-semana4-2.git) 

@@ -70,3 +70,10 @@ A través de Eloquent, los desarrolladores backend interactúan con la base de d
 $proyectosDestacados = Proyecto::where('activo', true)->get();
 
 ```
+
+## Recursos adicionales:
+- [![]()]
+
+## Proyectos Relacionados
+- [Desarrollo web - Práctica Semana 7](https://github.com/Ricardo-Llanos/Desarrollo-web-semana7.git)
+- [Desarrollo web - Práctica Semana 8](https://github.com/Ricardo-Llanos/Desarrollo-web-semana7.git)
