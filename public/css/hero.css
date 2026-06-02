@@ -4,20 +4,19 @@
     justify-content: center;
     min-height: 100vh;
     width: 100%;
+
+    padding: 5rem;
+
     /* Tu color de fondo exacto del archivo global */
     background-color: #090E19; 
-    padding: 12rem 2rem 6rem 2rem;
-    box-sizing: border-box;
 }
 
 .hero-container {
-    display: grid;
-    /* Forzamos dos columnas fijas: texto (55rem = 550px) y foto (36rem = 360px) */
-    grid-template-columns: 55rem 36rem;
+    display: flex;
     /* La distancia exacta y controlada entre los dos bloques */
-    gap: 8rem; 
+    gap: 1rem; 
     width: 100%;
-    max-width: 100rem; /* Evita que se expandan más allá de 1000px en monitores grandes */
+    max-width: 1200px; /* Evita que se expandan más allá de 1000px en monitores grandes */
     align-items: center;
     justify-content: center;
 }
@@ -25,18 +24,24 @@
 /* --- Bloque de Información (Tamaños Escalados Correctamente) --- */
 .hero-content {
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .badge {
     background: rgba(99, 102, 241, 0.1);
     border: 0.1rem solid rgba(99, 102, 241, 0.3);
     color: #818cf8;
-    padding: 0.8rem 1.6rem;
+
+    padding: 1rem 1.6rem;
     border-radius: 5rem;
+    
     font-size: 1.4rem; /* 14px */
-    font-weight: 600;
-    display: inline-block;
+    font-weight: bold;
+    
+    /* display: inline-block; */
     margin-bottom: 2.5rem;
+    width: 15%;
 }
 
 .hero-title {
@@ -81,7 +86,7 @@
     font-weight: 600;
     text-decoration: none;
     transition: all 0.2s ease;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 .btn-primary {
@@ -94,6 +99,10 @@
     border: 0.1rem solid #1e293b;
     color: white;
     background: rgba(15, 23, 42, 0.4);
+}
+
+.btn-action:hover{
+    opacity: 0.7;
 }
 
 /* --- Bloque de la Imagen --- */
@@ -211,6 +220,7 @@
     width: 2.2rem;  /* 22px de tamaño interno */
     height: 2.2rem;
     fill: #ffffff;  /* Color por defecto para tus iconos dinámicos */
+    color: #fff;
     transition: transform 0.2s ease;
 }
 

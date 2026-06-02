@@ -6,6 +6,7 @@
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -18,4 +19,5 @@ body{
     /* height: 100vh; */
 
     font-size: 1.7rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

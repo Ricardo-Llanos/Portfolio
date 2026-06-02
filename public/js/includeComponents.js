@@ -8,7 +8,7 @@ async function loadComponents(){
     const components = document.querySelectorAll("[data-component]");
 
     for (const container of components){
-        componentName = container.getAttribute("data-component");
+        const componentName = container.getAttribute("data-component");
 
         try{
             let component = await fetch(`components/${componentName}.html`);
@@ -17,9 +17,14 @@ async function loadComponents(){
                 throw new Error(`No se pudo cargar el componente ${componentName}`);
             }
 
+            // console.log(component);
             let htmlText = await component.text()
+
+            // const parser = new DOMParser();
+            // const doc = parser.parseFromString(htmlText, 'text/html');
             htmlText = htmlText.replace(/\r/g, "").trim();
             container.innerHTML = htmlText; // Reestablecemos el contenido HTML
+            console.log(htmlText);
         }catch(e){
             console.error(`[Component Error]: ${e.message}`); // Error
             container.innerHTML = `<p style="color: red;">Error al cargar el componente ${componentName}</p>`; // Indicador visual
@@ -32,7 +37,6 @@ async function loadComponents(){
  */
 function setupSPARouter() {
     const sesionLink = document.getElementById("nav-sesiones");
-    const portfolioSections = document.querySelectorAll("main > div:not([data-component='sesiones-clase'])");
     const sesionesWrapper = document.getElementById("sesiones-modulo");
 
     if (!sesionLink || !sesionesWrapper) {
@@ -41,6 +45,7 @@ function setupSPARouter() {
     }
 
     if (window.location.hash === "#sesiones") {
+        const portfolioSections = document.querySelectorAll("main > div:not([data-component='sesiones-clase'])");
         portfolioSections.forEach(section => section.style.display = "none");
         sesionesWrapper.style.display = "block";
         document.querySelectorAll(".navbar-links a").forEach(link => link.classList.remove("active"));
@@ -49,6 +54,8 @@ function setupSPARouter() {
     
     sesionLink.addEventListener("click", (e) => {
         e.preventDefault(); // Detiene la navegación tradicional del enlace
+
+        const portfolioSections = document.querySelectorAll("main > div:not([data-component='sesiones-clase'])");
 
         // 1. Oculta todas las secciones del portafolio principal
         portfolioSections.forEach(section => {
@@ -71,6 +78,8 @@ function setupSPARouter() {
         link.addEventListener("click", () => {
             if (sesionesWrapper.style.display === "block") {
                 sesionesWrapper.style.display = "none";
+
+                const portfolioSections = document.querySelectorAll("main > div:not([data-component='sesiones-clase'])");
                 portfolioSections.forEach(section => {
                     section.style.display = "block";
                 });
