@@ -136,6 +136,6 @@ Los motores de renderizado (como Blink en Chrome, Gecko en Firefox y WebKit en S
 
 ## Proyectos Relacionados
 - [Desarrollo web - Práctica Semana 2](https://github.com/Ricardo-Llanos/Desarrollo-web-semana2.git) 
-![Desarrollo web - Práctica Semana 2](./src/image.png)
+![Desarrollo web - Práctica Semana 2](public/md/src/image.png)
 - [Desarrollo web - Práctica Grupal Semana 2](https://github.com/IngenieroTaipe/GaleriaProyectos.git) 
-![Desarrollo web - Práctica Grupal Semana 2](./src/image-1.png)
+![Desarrollo web - Práctica Grupal Semana 2](public/md/src/image-1.png)

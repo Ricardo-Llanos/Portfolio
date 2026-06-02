@@ -136,6 +136,16 @@
     font-weight: 500;
 }
 
+.markdown-body a{
+    text-decoration: none;
+    color: #f43f5e;
+}
+
+.markdown-body img{
+    width: 100%;
+    height:100%;
+}
+
 .markdown-body pre code {
     color: #e2e8f0;
     background: transparent;
