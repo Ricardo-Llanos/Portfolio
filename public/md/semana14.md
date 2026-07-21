@@ -107,5 +107,5 @@ CMD ["gunicorn", "--bind", "0.0.0.0:8000", "core.wsgi:application"]
 - [![]()]
 
 ## Proyectos Relacionados
-- [Desarrollo web - Práctica Semana 10](https://github.com/Ricardo-Llanos/Desarrollo-web-semana7.git)
-- [Desarrollo web - Práctica Semana 10](https://github.com/Ricardo-Llanos/Desarrollo-web-semana7.git)
+- [Desarrollo web - Práctica Semana 14](https://github.com/Ricardo-Llanos/Desarrollo-web-semana7.git)
+- [Desarrollo web - Práctica Semana 14](https://github.com/Ricardo-Llanos/Desarrollo-web-semana7.git)

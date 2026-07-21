@@ -95,5 +95,5 @@ urlpatterns = [
 - [![]()]
 
 ## Proyectos Relacionados
-- [Desarrollo web - Práctica Semana 10](https://github.com/Ricardo-Llanos/Desarrollo-web-semana7.git)
-- [Desarrollo web - Práctica Semana 10](https://github.com/Ricardo-Llanos/Desarrollo-web-semana7.git)
+- [Desarrollo web - Práctica Semana 13](https://github.com/Ricardo-Llanos/Desarrollo-web-semana7.git)
+- [Desarrollo web - Práctica Semana 13](https://github.com/Ricardo-Llanos/Desarrollo-web-semana7.git)

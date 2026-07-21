@@ -106,5 +106,5 @@ class AuditoriaMiddleware:
 - [![]()]
 
 ## Proyectos Relacionados
-- [Desarrollo web - Práctica Semana 10](https://github.com/Ricardo-Llanos/Desarrollo-web-semana7.git)
-- [Desarrollo web - Práctica Semana 10](https://github.com/Ricardo-Llanos/Desarrollo-web-semana7.git)
+- [Desarrollo web - Práctica Semana 12](https://github.com/Ricardo-Llanos/Desarrollo-web-semana7.git)
+- [Desarrollo web - Práctica Semana 12](https://github.com/Ricardo-Llanos/Desarrollo-web-semana7.git)

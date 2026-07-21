@@ -43,12 +43,24 @@ El procesamiento de una petición HTTP en Django inicia con el análisis del sis
 
 El sistema de plantillas proporciona un lenguaje seguro y desacoplado para la generación dinámica de HTML:
 
-* **Herencia de Plantillas:** Permite establecer una estructura base unificada (como maquetas con encabezados y pies de página) reutilizando bloques de contenido dinámico mediante etiquetas como `{% extends %}` y `{% block %}`.
+* **Herencia de Plantillas:** Permite establecer una estructura base unificada (como maquetas con encabezados y pies de página) reutilizando bloques de contenido dinámico mediante etiquetas como:
+
+    ```django
+    {% extends 'base.html' %}
+    {% block content %}
+    ```
 
 
-* **Etiquetas y Filtros:** Incorpora estructuras de control nativas (`{% if %}`, `{% for %}`) y transformadores de datos (`{{ variable|lower }}`) que aseguran el formateo adecuado de la información expuesta al usuario.
-
-
+* **Etiquetas y Filtros:** Incorpora estructuras de control nativas:
+    ```django 
+    ({% if %},
+    {% for %})
+    ``` 
+    O transformadores de datos como:
+    ```
+    ({{ variable|lower }})
+    ```
+    que aseguran el formateo adecuado de la información expuesta al usuario.
 
 ---
 
@@ -123,5 +135,5 @@ urlpatterns = [
 - [![]()]
 
 ## Proyectos Relacionados
-- [Desarrollo web - Práctica Semana 10](https://github.com/Ricardo-Llanos/Desarrollo-web-semana7.git)
-- [Desarrollo web - Práctica Semana 10](https://github.com/Ricardo-Llanos/Desarrollo-web-semana7.git)
+- [Desarrollo web - Práctica Semana 11](https://github.com/Ricardo-Llanos/Desarrollo-web-semana7.git)
+- [Desarrollo web - Práctica Semana 11](https://github.com/Ricardo-Llanos/Desarrollo-web-semana7.git)
