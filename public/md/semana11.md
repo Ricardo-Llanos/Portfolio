@@ -46,15 +46,15 @@ El sistema de plantillas proporciona un lenguaje seguro y desacoplado para la ge
 * **Herencia de Plantillas:** Permite establecer una estructura base unificada (como maquetas con encabezados y pies de página) reutilizando bloques de contenido dinámico mediante etiquetas como:
 
     ```django
-    {% extends 'base.html' %}
-    {% block content %}
+    { extends 'base.html' %}
+    { block content %}
     ```
 
 
 * **Etiquetas y Filtros:** Incorpora estructuras de control nativas:
     ```django 
-    ({% if %},
-    {% for %})
+    ({ if %},
+    { for %})
     ``` 
     O transformadores de datos como:
     ```
